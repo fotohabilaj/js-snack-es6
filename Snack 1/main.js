@@ -23,12 +23,10 @@ const bici_da_corsa = [
     }
 ]
 console.log(bici_da_corsa);
-let massaBici = 99999;
-let biciPiuLeggera = {};
+let biciPiuLeggera = bici_da_corsa[0].peso_kg;
 for (let index = 0; index < bici_da_corsa.length; index++) {
     const unaBici = bici_da_corsa[index];
-    if (unaBici.peso_kg<massaBici) {
-        massaBici=unaBici.peso_kg;
+    if (unaBici.peso_kg<biciPiuLeggera.peso_kg) {
         biciPiuLeggera=bici_da_corsa[index]; 
     }
      
